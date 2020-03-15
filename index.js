@@ -35,7 +35,7 @@ function run(cmd) {
 }
 
 const render = function(style, file) {
-  return run(`node-sass --output-style ${style} ${file}`)
+  return run(`sass --style ${style} ${file}`)
 }
 
 let options = {
